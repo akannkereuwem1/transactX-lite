@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
+use App\Jobs\ProvisionVirtualAccountJob;
 
 class AuthController extends Controller
 {
@@ -31,6 +31,9 @@ class AuthController extends Controller
 
             return $user;
         });
+
+        // Dispatch job to provision virtual account (outside DB transaction)
+        ProvisionVirtualAccountJob::dispatch($user);
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
