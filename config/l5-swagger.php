@@ -5,7 +5,7 @@ return [
     'documentations' => [
         'default' => [
             'api' => [
-                'title' => 'TransactX Lite API',
+                'title' => 'L5 Swagger UI',
             ],
 
             'routes' => [
