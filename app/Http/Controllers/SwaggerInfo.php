@@ -10,8 +10,8 @@ use OpenApi\Attributes as OA;
     description: 'Backend fintech wallet API — virtual accounts, double-entry ledger, idempotent webhooks.'
 )]
 #[OA\Server(
-    url: '/api',
-    description: 'Local API server'
+    url: L5_SWAGGER_CONST_HOST . '/api',
+    description: 'API server'
 )]
 #[OA\SecurityScheme(
     securityScheme: 'sanctum',
