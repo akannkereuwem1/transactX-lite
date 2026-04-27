@@ -32,3 +32,11 @@ Thumbs.db
 # Project Setup Scripts
 setup_task1.sh
 setup_task2.sh
+
+# Internal docs — not for version control
+PRD.md
+module-one.md
+module-two.md
+module-three.md
+Agent.md
+.kiro/
