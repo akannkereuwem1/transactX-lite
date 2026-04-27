@@ -1,6 +1,6 @@
 # TransactX Lite
 
-A backend-only fintech wallet API built with Laravel 13. Designed to demonstrate financial correctness, clean architecture, and production awareness — not a consumer product.
+A fintech wallet API built with Laravel 13. Designed to demonstrate financial correctness, clean architecture, and production awareness.
 
 Every naira is tracked through a double-entry ledger. No balance is ever stored directly on a user record.
 
