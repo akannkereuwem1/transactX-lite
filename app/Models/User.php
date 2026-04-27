@@ -38,4 +38,12 @@ class User extends Authenticatable
     {
         return $this->hasOne(Wallet::class);
     }
+
+    /**
+     * Get the virtual account associated with the user.
+     */
+    public function virtualAccount()
+    {
+        return $this->hasOne(VirtualAccount::class);
+    }
 }
